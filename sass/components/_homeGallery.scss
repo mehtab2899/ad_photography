@@ -1,0 +1,30 @@
+.main {
+  &__gallery {
+    &--img {
+      margin: 1.5rem 0;
+
+      &__search {
+        opacity: 0;
+        & i {
+          font-size: 1.5rem;
+          color: $color-primary;
+        }
+      }
+
+      &:hover &__search {
+        @include abscenter;
+        opacity: 1;
+        transition: 0.3s all ease;
+      }
+
+      & img {
+        width: 100%;
+
+        &:hover {
+          opacity: 0.5;
+          transition: all 0.3s;
+        }
+      }
+    }
+  }
+}

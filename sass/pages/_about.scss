@@ -1,0 +1,21 @@
+.main {
+  text-align: center;
+
+  &__about {
+    &--img {
+      width: 100%;
+      background-size: cover;
+      height: auto;
+
+      @include respond(tab-port) {
+        padding: 1.5rem 0;
+      }
+    }
+
+    &--sign {
+      width: 25%;
+      float: left;
+      padding: 1rem 0 10rem;
+    }
+  }
+}

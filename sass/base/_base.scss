@@ -1,0 +1,147 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  box-sizing: border-box;
+  background: $color-secondary;
+  line-height: 1.5;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+img[alt="image"] {
+  color: $color-white;
+  font-size: 1.5em;
+}
+
+a {
+  color: #202020;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* text field */
+
+a:hover,
+a:active,
+a:focus {
+  color: #202020;
+  outline: none;
+  text-decoration: none !important;
+}
+a:link {
+  text-decoration: none;
+}
+a:focus {
+  outline: none;
+}
+
+/* text field */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: "Josefin Sans", sans-serif;
+}
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="text"]:focus,
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus,
+textarea:focus {
+  outline: none;
+}
+input[type="password"],
+input[type="email"],
+input[type="text"],
+input[type="file"],
+textarea {
+  max-width: 100%;
+  margin-bottom: 15px;
+  border-color: #1b1b1b;
+  padding: 10px 15px;
+  height: auto;
+  background-color: #1b1b1b;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-width: 0 0 1px;
+  border-style: solid;
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  line-height: 1.5em;
+  font-weight: 400;
+  color: #fff;
+  background-image: none;
+  border-bottom: 1px solid #1b1b1b;
+  color: #999;
+}
+input:focus,
+textarea:focus {
+  border-bottom-width: 2px;
+  border-color: #1b1b1b;
+}
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  text-shadow: none;
+  padding: 10px 30px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-weight: 400;
+  border: none;
+  color: #999;
+  -webkit-transition: background-color 0.15s ease-out;
+  transition: background-color 0.15s ease-out;
+  background-color: #101010;
+  margin-top: 11px;
+  font-size: 16px;
+  letter-spacing: 0px;
+  border-radius: 30px;
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Selection */
+::-webkit-selection {
+  color: #999;
+  background: rgba(0, 0, 0, 0.1);
+}
+::-moz-selection {
+  color: #999;
+  background: rgba(0, 0, 0, 0.1);
+}
+::selection {
+  color: #999;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+#container {
+  display: none;
+  opacity: 0;
+}

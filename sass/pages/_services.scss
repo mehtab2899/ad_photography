@@ -1,0 +1,65 @@
+.main {
+  &__services {
+    &--types {
+      & a {
+        color: $color-secondary;
+        transition: 0.5s;
+      }
+
+      & img {
+        padding-bottom: 3rem;
+        width: 100%;
+        height: auto;
+        opacity: 0.3;
+      }
+    }
+
+    &--desc {
+      padding-left: 3.5rem;
+      position: absolute;
+      left: 0;
+      opacity: 1;
+      bottom: 0;
+      padding-bottom: 5rem;
+
+      & div {
+        text-align: left;
+        font-size: 2rem;
+        color: $color-white;
+        margin-bottom: 0.5rem;
+      }
+
+      & h3 {
+        font-size: 2rem;
+        color: $color-white;
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__contact {
+    padding: 10rem 0 5rem;
+
+    & p {
+      font-size: 1.2rem;
+      color: $color-primary;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    & a {
+      & input {
+        font-size: 1.6rem;
+        color: $color-primary;
+        text-transform: capitalize;
+        transition: 0.1s all;
+        font-weight: 400;
+        line-height: 1.75;
+
+        &:hover {
+          color: $color-white;
+        }
+      }
+    }
+  }
+}

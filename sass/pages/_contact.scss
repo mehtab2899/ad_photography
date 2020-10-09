@@ -1,0 +1,33 @@
+.main {
+  &__contactUs {
+    & p {
+      font-size: 1.6rem;
+      color: $color-primary;
+      margin-bottom: 2rem;
+      text-align: left;
+    }
+
+    &--desc {
+      text-align: left;
+      color: $color-white;
+
+      & .email {
+        text-transform: lowercase;
+      }
+    }
+  }
+
+  .con_right {
+    @include respond(tab-port) {
+      padding-top: 5rem;
+    }
+  }
+}
+
+.alert {
+  padding-top: 2rem;
+  text-align: left;
+  display: none;
+  font-size: 2rem;
+  color: $color-primary;
+}

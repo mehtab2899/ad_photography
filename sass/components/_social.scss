@@ -1,0 +1,21 @@
+.social {
+  padding-top: 10rem;
+  text-align: center;
+
+  &__link {
+    padding: 0.5rem;
+  }
+
+  &__icon {
+    font-size: 2rem;
+    color: $color-white;
+    padding-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .social {
+    position: relative;
+    top: -5rem;
+  }
+}

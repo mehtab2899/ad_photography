@@ -1,0 +1,80 @@
+.aside {
+  &__hamburger {
+    display: none;
+    backface-visibility: hidden;
+
+    &--checkbox {
+      display: none;
+    }
+
+    &--button {
+      background-color: $color-black;
+      height: 4.5rem;
+      width: 4.5rem;
+      position: fixed;
+      top: 1.5rem;
+      left: 3rem;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: linear 0.5s;
+
+      &.active1 {
+        left: 27rem;
+      }
+    }
+
+    &--icon {
+      @include abscenter;
+
+      &,
+      &::before,
+      &::after {
+        width: 2.3rem;
+        height: 1px;
+        background-color: $color-white;
+        display: inline-block;
+      }
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        transition: all 0.2s;
+      }
+
+      &::before {
+        top: -0.8rem;
+      }
+      &::after {
+        top: 0.8rem;
+      }
+    }
+
+    &--button:hover &--icon::before {
+      top: -1rem;
+    }
+
+    &--button:hover &--icon::after {
+      top: 1rem;
+    }
+
+    &--checkbox:checked + &--button &--icon {
+      background-color: transparent;
+    }
+
+    &--checkbox:checked + &--button &--icon::before {
+      top: 0;
+      transform: rotate(45deg);
+    }
+
+    &--checkbox:checked + &--button &--icon::after {
+      top: 0;
+      transform: rotate(-45deg);
+    }
+
+    @include respond(tab-port) {
+      display: block;
+    }
+  }
+}

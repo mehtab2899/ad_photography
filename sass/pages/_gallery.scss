@@ -1,0 +1,11 @@
+.main {
+  &__video {
+    padding: 8rem 0;
+
+    & video {
+      width: 100%;
+      height: auto;
+      border: none;
+    }
+  }
+}

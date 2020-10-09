@@ -1,0 +1,58 @@
+.aside {
+  display: block;
+  width: 23%;
+  background: #101010;
+  background-image: linear-gradient(
+      to bottom,
+      rgba($color-secondary-light, 0.8),
+      rgba($color-secondary-dark, 0.8)
+    ),
+    url("../img/aside.jpg");
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  transition: all 0.8s;
+  z-index: 1000;
+  min-height: 100vh;
+  animation: moveInLeft 0.6s;
+
+  @include respond(tab-port) {
+    left: -30rem;
+    width: 260px;
+  }
+
+  &.active {
+    left: 0rem;
+  }
+
+  & a {
+    text-decoration: none;
+  }
+
+  @include respond(phone) {
+    height: 100vh !important;
+  }
+}
+
+.main {
+  width: 77%;
+  float: right;
+  text-align: center;
+  padding: 10rem 3rem 0;
+
+  &__para {
+    font-size: 1.3rem;
+    color: $color-primary;
+  }
+
+  @include respond(tab-port) {
+    width: 100%;
+  }
+
+  &__homepage {
+    & img {
+      width: 240px;
+      padding: 3rem 0 8rem;
+    }
+  }
+}
