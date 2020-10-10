@@ -1,129 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AD Quazi | Photographer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
-    <link rel=" stylesheet" href="css/style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <link rel=" stylesheet" href="css/style.css" />
+  </head>
 
-</head>
+  <body>
+    <!-- //////////////////////////////loader//////////////////////////////////////////// -->
 
-<body>
+    <div class="loader">
+      <div class="inner one"></div>
+      <div class="inner two"></div>
+      <div class="inner three"></div>
+    </div>
+
     <!-- //////////////////////aside element ///////////////////////////////-->
-
-    <aside class="aside" id="asideBar">
-
+    <div id="container">
+      <aside class="aside" id="asideBar">
         <div class="aside__hamburger">
-            <input type="checkbox" class="aside__hamburger--checkbox" onclick="toggleAside()" id="navi-toggle" />
-            <label for="navi-toggle" class="aside__hamburger--button" id="button">
-                <span class="aside__hamburger--icon">&nbsp;</span>
-            </label>
+          <input
+            type="checkbox"
+            class="aside__hamburger--checkbox"
+            onclick="toggleAside()"
+            id="navi-toggle"
+          />
+          <label for="navi-toggle" class="aside__hamburger--button" id="button">
+            <span class="aside__hamburger--icon">&nbsp;</span>
+          </label>
         </div>
 
         <div class="logo">
-            <a href="index.html">
-                <img src="img/index/logo/WHITE.png" alt="logo" class="logo__img">
-                <h1 class="heading-primary">Azharuddin Quazi (AD)</h1>
-                <p class="heading-primary--sub">photographer</p>
-            </a>
+          <a href="index.html">
+            <img src="img/index/logo/WHITE.png" alt="logo" class="logo__img" />
+            <h1 class="heading-primary">Azharuddin Quazi (AD)</h1>
+            <p class="heading-primary--sub">photographer</p>
+          </a>
         </div>
 
         <div class="navigation">
-            <nav class="navigation__nav">
-                <ul class="navigation__list">
-                    <li class="navigation__item"><a href="index.html" class="navigation__link">Home</a></li>
-                    <li class="navigation__item"><a href="about.html" class="navigation__link">About</a></li>
-                    <li class="navigation__item"><a href="services.html" class="navigation__link">Services</a></li>
-                    <li class="navigation__item"><a href="gallery.html" class="navigation__link">Gallery</a></li>
-                    <li class="navigation__item"><a href="contact.html" class="navigation__link">Contact</a></li>
-                </ul>
-            </nav>
+          <nav class="navigation__nav">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="index.html" class="navigation__link">Home</a>
+              </li>
+              <li class="navigation__item">
+                <a href="about.html" class="navigation__link">About</a>
+              </li>
+              <li class="navigation__item">
+                <a href="services.html" class="navigation__link">Services</a>
+              </li>
+              <li class="navigation__item">
+                <a href="gallery.html" class="navigation__link">Gallery</a>
+              </li>
+              <li class="navigation__item">
+                <a href="contact.html" class="navigation__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
         </div>
         <div class="social">
+          <a
+            href="https://www.facebook.com/azharuddin.quazi.56
+            "
+            class="social__link"
+            target="_blank"
+            ><i class="fab fa-facebook social__icon"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/adquaziphotography/"
+            class="social__link"
+            target="_blank"
+            ><i class="fab fa-instagram social__icon"></i
+          ></a>
+          <a
+            href="https://twitter.com/adquazi"
+            class="social__link"
+            target="_blank"
+            ><i class="fab fa-twitter social__icon"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/azharuddin-quazi-a08b2471/"
+            class="social__link"
+            target="_blank"
+            ><i class="fab fa-linkedin social__icon"></i
+          ></a>
 
-            <a href="https://www.facebook.com/azharuddin.quazi.56
-            " class="social__link" target="_blank"><i class="fab fa-facebook social__icon"></i></a>
-            <a href="https://www.instagram.com/adquaziphotography/" class="social__link" target="_blank"><i
-                    class="fab fa-instagram social__icon"></i></a>
-            <a href="https://twitter.com/adquazi" class="social__link" target="_blank"><i
-                    class="fab fa-twitter social__icon"></i></a>
-            <a href="https://www.linkedin.com/in/azharuddin-quazi-a08b2471/" class="social__link" target="_blank"><i
-                    class="fab fa-linkedin social__icon"></i></a>
-
-            <p class="para">&copy;
-                <script>
-                    document.write(new Date().getFullYear());
-                </script> by AD Quazi
-            </p>
+          <p class="para">
+            &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            by AD Quazi
+          </p>
         </div>
-    </aside>
+      </aside>
 
-    <!-- ///////////////////////////main section///////////////////////// -->
+      <!-- ///////////////////////////main section///////////////////////// -->
 
-    <main class="main">
-
+      <main class="main">
         <div class="main__about">
-            <h2 class="heading-secondary anime1">About Me</h2>
-            <div class="row">
-                <div class="col-md-12 anime1">
-                    <img src="img/about/1.jpg" class="main__about--img">
-                </div>
+          <h2 class="heading-secondary anime1">About Me</h2>
+          <div class="row">
+            <div class="col-md-12 anime1">
+              <img src="img/about/1.jpg" class="main__about--img" />
             </div>
+          </div>
 
-            <div class="row anime2 odd anime-delay3">
-                <div class="col-md-12">
-                    <p class="heading-secondary--sub">photographer</p>
-                    <h3 class="heading-tertiary anime1">Azharuddin Quazi</h3>
-                    <p class="heading-tertiary--sub anime1">
-                        AD Quazi Photography is a Wedding and Lifestyle Photography Venture led by Azharuddin Quazi.
-                        Azharuddin has been named among the top wedding photographers in India and with every wedding he
-                        shoots; he endeavors to do better than the last. Azharuddin and his team of photographers and
-                        cinematographers specialize in Wedding Photography & Films where they strive to create timeless
-                        memories for you which are candid, emotional, offbeat, and fun.
-                    </p>
-                    <p class="heading-tertiary--sub anime1">
-                        If you are searching for that Best Wedding Photographer to shoot your beautiful
-                        once-in-a-lifetime event; someone who will put in sincere effort to capture the absolute best,
-                        Azharuddin and team is the right fit for you.
-                    </p>
-                    <img src="img/index/sign/sign.png" alt="signature" class="main__about--sign anime1">
-                </div>
+          <div class="row anime2 odd anime-delay3">
+            <div class="col-md-12">
+              <p class="heading-secondary--sub">photographer</p>
+              <h3 class="heading-tertiary anime1">Azharuddin Quazi</h3>
+              <p class="heading-tertiary--sub anime1">
+                AD Quazi Photography is a Wedding and Lifestyle Photography
+                Venture led by Azharuddin Quazi. Azharuddin has been named among
+                the top wedding photographers in India and with every wedding he
+                shoots; he endeavors to do better than the last. Azharuddin and
+                his team of photographers and cinematographers specialize in
+                Wedding Photography & Films where they strive to create timeless
+                memories for you which are candid, emotional, offbeat, and fun.
+              </p>
+              <p class="heading-tertiary--sub anime1">
+                If you are searching for that Best Wedding Photographer to shoot
+                your beautiful once-in-a-lifetime event; someone who will put in
+                sincere effort to capture the absolute best, Azharuddin and team
+                is the right fit for you.
+              </p>
+              <img
+                src="img/index/sign/sign.png"
+                alt="signature"
+                class="main__about--sign anime1"
+              />
             </div>
+          </div>
 
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12 anime-delay4 odd">
-                    <img src="img/about/2.jpg" alt="image" class="main__about--img">
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12 anime-delay4 even">
-                    <img src="img/about/3.jpg" alt="image" class="main__about--img">
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12 anime-delay4 odd1">
-                    <img src="img/about/4.jpg" alt="image" class="main__about--img">
-                </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-12 anime-delay4 odd">
+              <img src="img/about/2.jpg" alt="image" class="main__about--img" />
             </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-12 anime-delay4 even">
+              <img src="img/about/3.jpg" alt="image" class="main__about--img" />
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-12 anime-delay4 odd1">
+              <img src="img/about/4.jpg" alt="image" class="main__about--img" />
+            </div>
+          </div>
         </div>
+      </main>
 
-    </main>
+      <!-- /////////////////////////footer///////////////////////////////////// -->
 
-    <!-- /////////////////////////footer///////////////////////////////////// -->
-
-    <footer class="footer">
+      <footer class="footer">
         <h1 class="heading-primary">Azharuddin Quazi (AD)</h1>
         <p class="heading-primary--sub">photographer</p>
-        <p class="footer__para">&copy;
-            <script>
-                document.write(new Date().getFullYear());
-            </script> by AD Quazi
+        <p class="footer__para">
+          &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          by AD Quazi
         </p>
-    </footer>
-
+      </footer>
+    </div>
     <!-- ////////////////////////////////scripts////////////////////////////////// -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -131,7 +187,5 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="app.js"></script>
-
-</body>
-
+  </body>
 </html>

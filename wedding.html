@@ -1,207 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AD Quazi | Photographer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
-    <link rel=" stylesheet" href="css/style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    />
+    <link rel=" stylesheet" href="css/style.css" />
+  </head>
 
-</head>
+  <body>
+    <!-- //////////////////////////////loader//////////////////////////////////////////// -->
 
-<body>
+    <div class="loader">
+      <div class="inner one"></div>
+      <div class="inner two"></div>
+      <div class="inner three"></div>
+    </div>
+
     <!-- //////////////////////aside element ///////////////////////////////-->
-
-    <aside class="aside" id="asideBar">
-
+    <div id="container">
+      <aside class="aside" id="asideBar">
         <div class="aside__hamburger">
-            <input type="checkbox" class="aside__hamburger--checkbox" onclick="toggleAside()" id="navi-toggle" />
-            <label for="navi-toggle" class="aside__hamburger--button" id="button">
-                <span class="aside__hamburger--icon">&nbsp;</span>
-            </label>
+          <input
+            type="checkbox"
+            class="aside__hamburger--checkbox"
+            onclick="toggleAside()"
+            id="navi-toggle"
+          />
+          <label for="navi-toggle" class="aside__hamburger--button" id="button">
+            <span class="aside__hamburger--icon">&nbsp;</span>
+          </label>
         </div>
 
         <div class="logo">
-            <a href="index.html">
-                <img src="img/index/logo/WHITE.png " alt="logo" class="logo__img">
-                <h1 class="heading-primary">Azharuddin Quazi (AD)</h1>
-                <p class="heading-primary--sub">photographer</p>
-            </a>
+          <a href="index.html">
+            <img src="img/index/logo/WHITE.png " alt="logo" class="logo__img" />
+            <h1 class="heading-primary">Azharuddin Quazi (AD)</h1>
+            <p class="heading-primary--sub">photographer</p>
+          </a>
         </div>
 
         <div class="navigation">
-            <nav class="navigation__nav">
-                <ul class="navigation__list">
-                    <li class="navigation__item"><a href="index.html" class="navigation__link">Home</a></li>
-                    <li class="navigation__item"><a href="about.html" class="navigation__link">About</a></li>
-                    <li class="navigation__item"><a href="services.html" class="navigation__link">Services</a></li>
-                    <li class="navigation__item"><a href="gallery.html" class="navigation__link">Gallery</a></li>
-                    <li class="navigation__item"><a href="contact.html" class="navigation__link">Contact</a></li>
-                </ul>
-            </nav>
+          <nav class="navigation__nav">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="index.html" class="navigation__link">Home</a>
+              </li>
+              <li class="navigation__item">
+                <a href="about.html" class="navigation__link">About</a>
+              </li>
+              <li class="navigation__item">
+                <a href="services.html" class="navigation__link">Services</a>
+              </li>
+              <li class="navigation__item">
+                <a href="gallery.html" class="navigation__link">Gallery</a>
+              </li>
+              <li class="navigation__item">
+                <a href="contact.html" class="navigation__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
         </div>
 
         <div class="social">
-            <a href="https://www.facebook.com/azharuddin.quazi.56
-            " class="social__link" target="_blank"><i class="fab fa-facebook social__icon"></i></a>
-            <a href="https://www.instagram.com/adquaziphotography/" class="social__link" target="_blank"><i
-                    class="fab fa-instagram social__icon"></i></a>
-            <a href="https://twitter.com/adquazi" class="social__link" target="_blank"><i
-                    class="fab fa-twitter social__icon"></i></a>
-            <a href="https://www.linkedin.com/in/azharuddin-quazi-a08b2471/" class="social__link" target="_blank"><i
-                    class="fab fa-linkedin social__icon"></i></a>
-            <p class="para">&copy;
-                <script>
-                    document.write(new Date().getFullYear());
-                </script> by AD Quazi
-            </p>
+          <a
+            href="https://www.facebook.com/azharuddin.quazi.56
+            "
+            class="social__link"
+            target="_blank"
+            ><i class="fab fa-facebook social__icon"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/adquaziphotography/"
+            class="social__link"
+            target="_blank"
+            ><i class="fab fa-instagram social__icon"></i
+          ></a>
+          <a
+            href="https://twitter.com/adquazi"
+            class="social__link"
+            target="_blank"
+            ><i class="fab fa-twitter social__icon"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/azharuddin-quazi-a08b2471/"
+            class="social__link"
+            target="_blank"
+            ><i class="fab fa-linkedin social__icon"></i
+          ></a>
+          <p class="para">
+            &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            by AD Quazi
+          </p>
         </div>
+      </aside>
 
-    </aside>
+      <!-- ///////////////////////////////main section////////////////////////////// -->
 
-    <!-- ///////////////////////////////main section////////////////////////////// -->
-
-    <main class="main">
+      <main class="main">
         <div class="main__post">
-            <h2 class="heading-secondary anime1">wedding</h2>
-            <div class="row anime1">
-                <div class="col-md-12">
-                    <img src="img/Services/Wedding/1.jpg" alt="image" class="main__about--img">
-                </div>
+          <h2 class="heading-secondary anime1">wedding</h2>
+          <div class="row anime1">
+            <div class="col-md-12">
+              <img
+                src="img/Services/Wedding/1.jpg"
+                alt="image"
+                class="main__about--img"
+              />
             </div>
+          </div>
 
-            <div class="row anime2 odd anime-delay3">
-                <div class="col-md-12 pt-4">
-                    <p class="heading-tertiary--sub">
-                        Wedding photography grants you to recollect your entire day, from
-                        the rejuvenate morning plans straight up to the night toasts. These significant minutes recount
-                        to the lovely story of your wedding – which will pass by so quickly, you'll need something
-                        substantial to think back on and treasure.
-                    </p>
-                    <p class="heading-tertiary--sub">
-                        We as a photographer can catch the inspiring, passionate shots that you may some way or another
-                        overlook. A Professional Photographer will mix in to the background so as to get candid shots of
-                        these close minutes – from preparing with your bridesmaids, to the pride in your folks' eyes
-                        when they see you in your dress.
-                        Let us create your album of sweet wedding memory that lasts forever. Choose us as a best wedding
-                        photographer in India.
-                    </p>
-                </div>
+          <div class="row anime2 odd anime-delay3">
+            <div class="col-md-12 pt-4">
+              <p class="heading-tertiary--sub">
+                Wedding photography grants you to recollect your entire day,
+                from the rejuvenate morning plans straight up to the night
+                toasts. These significant minutes recount to the lovely story of
+                your wedding – which will pass by so quickly, you'll need
+                something substantial to think back on and treasure.
+              </p>
+              <p class="heading-tertiary--sub">
+                We as a photographer can catch the inspiring, passionate shots
+                that you may some way or another overlook. A Professional
+                Photographer will mix in to the background so as to get candid
+                shots of these close minutes – from preparing with your
+                bridesmaids, to the pride in your folks' eyes when they see you
+                in your dress. Let us create your album of sweet wedding memory
+                that lasts forever. Choose us as a best wedding photographer in
+                India.
+              </p>
             </div>
+          </div>
 
-            <div class="row">
-                <div class="col-lg-6 col-md 6 col-sm-12 col-12 anime2 anime-delay3 odd">
-                    <div class="main__gallery--img">
-                        <a href="img/Services/Wedding/2.jpg" data-fancybox="image">
-                            <img src="img/Services/Wedding/2.jpg" alt="image">
-                            <span class="main__gallery--img__search">
-                                <i class="fa fa-search"></i>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md 6 col-sm-12 col-12 anime2 anime-delay4">
-                    <div class="main__gallery--img">
-                        <a href="img/Services/Wedding/3.jpg" data-fancybox="image">
-                            <img src="img/Services/Wedding/3.jpg" alt="image">
-                            <span class="main__gallery--img__search">
-                                <i class="fa fa-search"></i>
-                            </span>
-                        </a>
-                    </div>
-                </div>
+          <div class="row">
+            <div
+              class="col-lg-6 col-md 6 col-sm-12 col-12 anime2 anime-delay3 odd"
+            >
+              <div class="main__gallery--img">
+                <a href="img/Services/Wedding/2.jpg" data-fancybox="image">
+                  <img src="img/Services/Wedding/2.jpg" alt="image" />
+                  <span class="main__gallery--img__search">
+                    <i class="fa fa-search"></i>
+                  </span>
+                </a>
+              </div>
             </div>
-
-            <div class="row">
-                <div class="col-lg-6 col-md 6 col-sm-12 col-12 anime2 anime-delay5 odd">
-                    <div class="main__gallery--img">
-                        <a href="img/Services/Wedding/4.jpg" data-fancybox="image">
-                            <img src="img/Services/Wedding/4.jpg" alt="image">
-                            <span class="main__gallery--img__search">
-                                <i class="fa fa-search"></i>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md 6 col-sm-12 col-12 anime2 anime-delay6 even">
-                    <div class="main__gallery--img">
-                        <a href="img/Services/Wedding/5.jpg" data-fancybox="image">
-                            <img src="img/Services/Wedding/5.jpg" alt="image">
-                            <span class="main__gallery--img__search">
-                                <i class="fa fa-search"></i>
-                            </span>
-                        </a>
-                    </div>
-                </div>
+            <div class="col-lg-6 col-md 6 col-sm-12 col-12 anime2 anime-delay4">
+              <div class="main__gallery--img">
+                <a href="img/Services/Wedding/3.jpg" data-fancybox="image">
+                  <img src="img/Services/Wedding/3.jpg" alt="image" />
+                  <span class="main__gallery--img__search">
+                    <i class="fa fa-search"></i>
+                  </span>
+                </a>
+              </div>
             </div>
+          </div>
 
-            <div class="row">
-                <div class="col-lg-6 col-md 6 col-sm-12 col-12 anime2 anime-delay7 odd">
-                    <div class="main__gallery--img">
-                        <a href="img/Services/Wedding/6.jpg" data-fancybox="image">
-                            <img src="img/Services/Wedding/6.jpg" alt="image">
-                            <span class="main__gallery--img__search">
-                                <i class="fa fa-search"></i>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md 6 col-sm-12 col-12 anime2 anime-delay8 even">
-                    <div class="main__gallery--img">
-                        <a href="img/Services/Wedding/7.jpg" data-fancybox="image">
-                            <img src="img/Services/Wedding/7.jpg" alt="image">
-                            <span class="main__gallery--img__search">
-                                <i class="fa fa-search"></i>
-                            </span>
-                        </a>
-                    </div>
-                </div>
+          <div class="row">
+            <div
+              class="col-lg-6 col-md 6 col-sm-12 col-12 anime2 anime-delay5 odd"
+            >
+              <div class="main__gallery--img">
+                <a href="img/Services/Wedding/4.jpg" data-fancybox="image">
+                  <img src="img/Services/Wedding/4.jpg" alt="image" />
+                  <span class="main__gallery--img__search">
+                    <i class="fa fa-search"></i>
+                  </span>
+                </a>
+              </div>
             </div>
-
-            <div class="row">
-                <div class="col-lg-6 col-md 6 col-sm-12 col-12 anime2 anime-delay9 odd">
-                    <div class="main__gallery--img">
-                        <a href="img/Services/Wedding/8.jpg" data-fancybox="image">
-                            <img src="img/Services/Wedding/8.jpg" alt="image">
-                            <span class="main__gallery--img__search">
-                                <i class="fa fa-search"></i>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md 6 col-sm-12 col-12 anime2 anime-delay10 even">
-                    <div class="main__gallery--img">
-                        <a href="img/Services/Wedding/9.jpg" data-fancybox="image">
-                            <img src="img/Services/Wedding/9.jpg" alt="image">
-                            <span class="main__gallery--img__search">
-                                <i class="fa fa-search"></i>
-                            </span>
-                        </a>
-                    </div>
-                </div>
+            <div
+              class="col-lg-6 col-md 6 col-sm-12 col-12 anime2 anime-delay6 even"
+            >
+              <div class="main__gallery--img">
+                <a href="img/Services/Wedding/5.jpg" data-fancybox="image">
+                  <img src="img/Services/Wedding/5.jpg" alt="image" />
+                  <span class="main__gallery--img__search">
+                    <i class="fa fa-search"></i>
+                  </span>
+                </a>
+              </div>
             </div>
+          </div>
 
+          <div class="row">
+            <div
+              class="col-lg-6 col-md 6 col-sm-12 col-12 anime2 anime-delay7 odd"
+            >
+              <div class="main__gallery--img">
+                <a href="img/Services/Wedding/6.jpg" data-fancybox="image">
+                  <img src="img/Services/Wedding/6.jpg" alt="image" />
+                  <span class="main__gallery--img__search">
+                    <i class="fa fa-search"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div
+              class="col-lg-6 col-md 6 col-sm-12 col-12 anime2 anime-delay8 even"
+            >
+              <div class="main__gallery--img">
+                <a href="img/Services/Wedding/7.jpg" data-fancybox="image">
+                  <img src="img/Services/Wedding/7.jpg" alt="image" />
+                  <span class="main__gallery--img__search">
+                    <i class="fa fa-search"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div
+              class="col-lg-6 col-md 6 col-sm-12 col-12 anime2 anime-delay9 odd"
+            >
+              <div class="main__gallery--img">
+                <a href="img/Services/Wedding/8.jpg" data-fancybox="image">
+                  <img src="img/Services/Wedding/8.jpg" alt="image" />
+                  <span class="main__gallery--img__search">
+                    <i class="fa fa-search"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div
+              class="col-lg-6 col-md 6 col-sm-12 col-12 anime2 anime-delay10 even"
+            >
+              <div class="main__gallery--img">
+                <a href="img/Services/Wedding/9.jpg" data-fancybox="image">
+                  <img src="img/Services/Wedding/9.jpg" alt="image" />
+                  <span class="main__gallery--img__search">
+                    <i class="fa fa-search"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-    </main>
+      </main>
 
-    <!-- /////////////////////////////footer//////////////////////////////// -->
+      <!-- /////////////////////////////footer//////////////////////////////// -->
 
-    <footer class="footer">
+      <footer class="footer">
         <h1 class="heading-primary">Azharuddin Quazi (AD)</h1>
         <p class="heading-primary--sub">photographer</p>
-        <p class="footer__para">&copy;
-            <script>
-                document.write(new Date().getFullYear());
-            </script> by AD Quazi
+        <p class="footer__para">
+          &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          by AD Quazi
         </p>
-    </footer>
+      </footer>
+    </div>
 
     <!-- //////////////////////////////scripts//////////////////////////////////////// -->
 
@@ -211,7 +286,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="app.js"></script>
-
-</body>
-
+  </body>
 </html>
