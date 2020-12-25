@@ -1,87 +1,85 @@
 .anime1,
-.anime2,
-.gal-anime {
-  opacity: 0;
+.anime2 {
+	opacity: 0;
 }
 
 .anime1.animated,
-.anime2.animated,
-.gal-anime.animated {
-  opacity: 1;
+.anime2.animated {
+	opacity: 1;
 }
 
 .odd {
-  animation-delay: 0.1s;
+	animation-delay: 0.1s;
 }
 
 .even {
-  animation-delay: 0.2s;
+	animation-delay: 0.2s;
 }
 
 .odd1 {
-  animation-delay: 0.3s;
+	animation-delay: 0.3s;
 }
 
 // --------------------------gallery animaitions-------------------------------------
 
-.gal-delay1 {
-  animation-delay: 0.3s;
+.anime-delay1 {
+	animation-delay: 0.3s;
 }
 
-.gal-delay2 {
-  animation-delay: 0.6s;
+.anime-delay2 {
+	animation-delay: 0.6s;
 }
 
-.gal-delay3 {
-  animation-delay: 0.9s;
+.anime-delay3 {
+	animation-delay: 0.9s;
 }
 
-.gal-delay4 {
-  animation-delay: 1.2s;
+.anime-delay4 {
+	animation-delay: 1.2s;
 }
 
-.gal-delay5 {
-  animation-delay: 1.5s;
+.anime-delay5 {
+	animation-delay: 1.5s;
 }
 
-.gal-delay6 {
-  animation-delay: 1.8s;
+.anime-delay6 {
+	animation-delay: 1.8s;
 }
 
-.gal-delay7 {
-  animation-delay: 2.1s;
+.anime-delay7 {
+	animation-delay: 2.1s;
 }
 
-.gal-delay8 {
-  animation-delay: 2.4s;
+.anime-delay8 {
+	animation-delay: 2.4s;
 }
 
-.gal-delay9 {
-  animation-delay: 2.7s;
+.anime-delay9 {
+	animation-delay: 2.7s;
 }
 
-.gal-delay10 {
-  animation-delay: 3s;
+.anime-delay10 {
+	animation-delay: 3s;
 }
 
-.gal-delay11 {
-  animation-delay: 3.3s;
+.anime-delay11 {
+	animation-delay: 3.3s;
 }
 
-.gal-delay12 {
-  animation-delay: 3.6s;
+.anime-delay12 {
+	animation-delay: 3.6s;
 }
 
 // aside animation
 
 @keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-20rem);
-  }
+	0% {
+		opacity: 0;
+		transform: translateX(-20rem);
+	}
 
-  100% {
-    opacity: 1;
-    transform: translateX(0rem);
-  }
+	100% {
+		opacity: 1;
+		transform: translateX(0rem);
+	}
 }
